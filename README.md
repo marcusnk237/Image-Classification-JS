@@ -1,4 +1,4 @@
-# MobileNet-JS
+# Image-Classification-JS
 Application web de classification d'images utilisant le Mobile Net
 
 L'application web permet de classer des images grâce au modèle Mobile Net et à l' API Javascript ml5js.
