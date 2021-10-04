@@ -1,8 +1,8 @@
 # Image-Classification-JS
-Application web de classification d'images utilisant le Mobile Net
+Image classification web app using Mobile Net
 
-L'application web permet de classer des images grâce au modèle Mobile Net et à l' API Javascript ml5js.
-Une fois ouverte, l'utilisateur peut charger une image, soit en cliquant sur le bouton "charger", soit en le déposant directement.
-L' application va prédire la classe de l'erreur, ainsi que  la certitude du classement.
+The web application allows to classify images thanks to the Mobile Net model and the ml5js Javascript API.
+Once opened, the user can upload an image, either by clicking on the "upload" button, or by dropping it directly.
+The application will predict the class as well as the accuracy of the classification.
 
-Crédit: https://ml5js.org/
+Credit: https://ml5js.org/
