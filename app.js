@@ -1,4 +1,4 @@
-/************************** Initialisations **********************/
+/************************** Initialization **********************/
 const log = console.log; 
 const image = document.getElementById("image");
 const dropContainer = document.getElementById("container");
@@ -10,7 +10,7 @@ const probability = document.getElementById("probability");
 const classifier = ml5.imageClassifier("Mobilenet", () => {});
 /****************************************************************/
 
-/********************************************** Dépôt de l'image **********************************************/
+/********************************************** Drop image **********************************************/
 ["dragenter", "dragover"].forEach(eventName => {
     dropContainer.addEventListener(eventName, e => dropContainer.classList.add("highlight"))
 });
@@ -34,7 +34,7 @@ function preventDefaults(e) {
     e.stopPropagation();
 };
 
-/********************* Fonction de Chargement de l'image à classifier *********************/
+/********************* Loading image function *********************/
 function gotImage(e) {
     const dt = e.dataTransfer;
     const files = dt.files;
@@ -54,9 +54,9 @@ function gotImage(e) {
         };
     } 
 };
-/********************************************************************************************/
+/********************************************************************/
 
-/********************* Fonction de classification de l'image *********************/
+/********************* Classification function *********************/
 function classification() {
     classifier.predict(image, (err, results) => {
         if (err) {
@@ -71,7 +71,7 @@ function classification() {
 };
 /*********************************************************************************/
 
-/************ Gestion des fichiers ************/
+/************ File management ************/
 function handleFiles() {
     const curFiles = fileInput.files;
     if (curFiles.length === 0) {
