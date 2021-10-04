@@ -3,7 +3,7 @@ const log = console.log;
 const image = document.getElementById("image");
 const dropContainer = document.getElementById("container");
 const fileInput = document.getElementById("fileUploader");
-const ImageSrc = "grumpy_cat.jpg"; // Image par défaut
+const ImageSrc = "grumpy_cat.jpg"; // Default image
 
 const result = document.getElementById("result");
 const probability = document.getElementById("probability");
